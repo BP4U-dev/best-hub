@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Primary Meta Tags -->
@@ -46,10 +45,110 @@
     <meta name="distribution" content="Global">
     <meta name="rating" content="General">
     
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Best Electronics 2025",
+      "url": "https://bestproductshub.com/electronics.html",
+      "description": "Curated collection of the best electronics and tech products available on Amazon with expert reviews and deals.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Top Electronics Products",
+        "description": "Best electronics deals and reviews including smartphones, laptops, headphones, and gaming gear"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bestproductshub.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Electronics",
+            "item": "https://bestproductshub.com/electronics.html"
+          }
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Best Products Hub",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bestproductshub.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+    
     <!-- Canonical URL -->
     <link rel="canonical" href="https://bestproductshub.com/electronics.html">
     
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="site-features/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <link rel="stylesheet" href="site-features/styles.css">
+    
+    <!-- Coming Soon Notification Styles -->
+    <style>
+        .coming-soon-notification {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+        }
+        
+        .notification-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .notification-icon {
+            font-size: 1.3rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .notification-text {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .notification-content {
+                font-size: 1rem;
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .coming-soon-notification {
+                padding: 0.8rem 0;
+            }
+        }
+    </style>
     
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CRSSDC7PC"></script>
@@ -57,8 +156,101 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);} 
   gtag('js', new Date());
+
   gtag('config', 'G-9CRSSDC7PC');
 </script>
+
+    <!-- Additional CSS for reviews section -->
+    <style>
+        .reviews-section {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+        
+        .review-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #007bff;
+        }
+        
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .reviewer-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .review-product {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .star-rating {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .star {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+        
+        .star.empty {
+            color: #ddd;
+        }
+        
+        .review-text {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .review-date {
+            color: #888;
+            font-size: 0.85rem;
+        }
+        
+        .verified-purchase {
+            background: #e8f5e8;
+            color: #2d5a2d;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .tech-badge {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .review-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .reviews-section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -93,6 +285,16 @@
         </div>
     </section>
 
+    <!-- Coming Soon Notification -->
+    <div class="coming-soon-notification">
+        <div class="container">
+            <div class="notification-content">
+                <span class="notification-icon">🚧</span>
+                <span class="notification-text">This page is coming soon</span>
+            </div>
+        </div>
+    </div>
+
     <main class="container">
         <section class="content-section">
             <h2 class="section-title">Electronics Categories</h2>
@@ -106,21 +308,507 @@
             </div>
         </section>
 
-        <!-- Content truncated; same as original with image paths to images/... -->
+        <section class="content-section" id="smartphones">
+            <h2 class="section-title">Smartphones & Mobile</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/iphone15.jpg" alt="iPhone 15 Pro" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Apple iPhone 15, 128GB, Black - Unlocked (Renewed)</h3>
+                    <p class="product-description">The most advanced iPhone ever with titanium design, A17 Pro chip, and revolutionary camera system.</p>
+                    <div class="product-price">$513.82  <small><strike>$539.00</strike></small></div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.5/5)</div>
+                    <a href="https://amzn.to/3K6WDan" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/samsunggs24.jpg" alt="Samsung Galaxy S24" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Samsung Galaxy S24 Ultra</h3>
+                    <p class="product-description">Unleash your creativity with the Galaxy S24 Ultra's advanced AI features, S Pen, and 200MP camera.</p>
+                    <div class="product-price">$1,119.79 <small><strike>$1,299.99</strike></small></div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.6/5)</div>
+                    <a href="https://amzn.to/3VZ2pxb" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/wireless-charger.jpg" alt="Wireless Charging Pad" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Anker PowerWave Wireless Charger</h3>
+                    <p class="product-description">Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator.</p>
+                    <div class="product-price">$28.49 <small><strike>$35.99</strike></small></div>
+                    <div class="product-rating"><p>Rating: ★★★★☆ (4.6/5)</p></div>
+                    <a href="https://amzn.to/4pJv6w7" class="affiliate-button">View on Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="laptops">
+            <h2 class="section-title">Laptops & Computers</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/macbook-air.jpg" alt="MacBook Air M4" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Apple 2025 MacBook Air 13-inch Laptop with M4 chip</h3>
+                    <p class="product-description">Supercharged by the M4 chip, the MacBook Air delivers exceptional performance and up to 18 hours of battery life.</p>
+                    <div class="product-price">$799.99</div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.8/5)</div>
+                    <a href="https://amzn.to/3Iorsqj" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/gaming-laptop.jpg" alt="Gaming Laptop" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">ASUS ROG Strix G15</h3>
+                    <p class="product-description">High-performance gaming laptop with NVIDIA GeForce RTX 3050, AMD Ryzen 7, 16GB of DDR5-4800MHz memory and speed up loading times with 512GB of PCIe 4x4, for ultimate gaming.</p>
+                    <div class="product-price">$999.00</div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.6/5)</div>
+                    <a href="https://amzn.to/3K3MECJ" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/mechanical-keyboard.jpg" alt="Mechanical Keyboard" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Corsair K70 Core RGB Mechanical Keyboard</h3>
+                    <p class="product-description">Pre-lubricated Corsair MLX Red Linear Keyswitches - Sound Dampening - Media Control Dial - iCUE Compatible - QWERTY NA Layout - Black</p>
+                    <div class="product-price">$79.99 <small><strike>$99.99</strike></small></div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.4/5)</div>
+                    <a href="https://amzn.to/46GXbwg" class="affiliate-button">View on Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="audio">
+            <h2 class="section-title">Audio & Headphones</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/airpods-pro.jpg" alt="AirPods Pro 2" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Apple AirPods Pro 2</h3>
+                    <p class="product-description">Next-level Active Noise Cancellation, Adaptive Transparency, and personalized Spatial Audio experience.</p>
+                    <div class="product-price">$199.99</div>
+                    <div class="product-rating">★★★★☆ (4.6/5)</div>
+                    <a href="https://amzn.to/46u6U84" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/sony-headphones.jpg" alt="Sony WH-1000XM5" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Sony WH-1000XM5 Headphones</h3>
+                    <p class="product-description">Industry-leading noise canceling headphones with exceptional sound quality and 30-hour battery life.</p>
+                    <div class="product-price">$328.00 <small><strike>$399.99</strike></small></div>
+                    <div class="product-rating">★★★★☆ (4.3/5)</div>
+                    <a href="https://amzn.to/4psrWwk" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/bluetooth-speaker.jpg" alt="JBL Charge 5" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">JBL Charge 5 Portable Speaker</h3>
+                    <p class="product-description">Powerful portable Bluetooth speaker with deep bass, waterproof design, and power bank functionality.</p>
+                    <div class="product-price">$179.95</div>
+                    <div class="product-rating">★★★★☆ (4.7/5)</div>
+                    <a href="https://amzn.to/469qCXN" class="affiliate-button">View on Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="smart-home">
+            <h2 class="section-title">Smart Home Devices</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/amazon-show.jpg" alt="Amazon Echo Dot" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Amazon Echo Show 5</h3>
+                    <p class="product-description">Echo Show 5 includes a 5.5" display so you can see news and weather at a glance, make video calls, view compatible cameras, stream music and shows, and more.</p>
+                    <div class="product-price">$64.99 <small><strike>$89.99</strike></small></div>
+                    <div class="product-rating">★★★★☆ (4.4/5)</div>
+                    <a href="https://amzn.to/4n5lidM" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/smart-bulb.jpg" alt="Philips Hue Bulbs" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Philips Hue A19 LED Smart Light Bulbs</h3>
+                    <p class="product-description">Flicker-Free 75w Light Bulbs - Control with Hue App - Compatible with Alexa, Google Assistant, and Apple HomeKit - E26 Base - 2 Pack</p>
+                    <div class="product-price">$49.99 <small><strike>$54.99</strike></small></div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.6/5)</div>
+                    <a href="https://amzn.to/46rIAU6" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/ring-doorbell.jpg" alt="Ring Video Doorbell" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Ring Video Doorbell Pro 2 with Ring Chime Pro</h3>
+                    <p class="product-description">Advanced security features with 1536p HD video, 3D motion detection, and built-in Alexa Greetings.</p>
+                    <div class="product-price">$259.99 <small><strike>$289.98</strike></small></div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.7/5)</div>
+                    <a href="https://amzn.to/46rKsw8" class="affiliate-button">View on Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="gaming">
+            <h2 class="section-title">Gaming Accessories</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/ps5-controller.jpg" alt="PS5 DualSense Controller" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">PlayStation DualSense® Wireless Controller Midnight Black</h3>
+                    <p class="product-description">Revolutionary gaming controller with haptic feedback and adaptive triggers for immersive gameplay.</p>
+                    <div class="product-price">$74.88</div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.6/5)</div>
+                    <a href="https://amzn.to/4pyL63Y" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/gaming-mouse.jpg" alt="Gaming Mouse" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Logitech G502 HERO Gaming Mouse</h3>
+                    <p class="product-description">High-performance gaming mouse with HERO 25K sensor, customizable weights, and programmable buttons.</p>
+                    <div class="product-price">$39.99 <small><strike>$69.99</strike></small></div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.6/5)</div>
+                    <a href="https://amzn.to/4gr1D5z" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/gaming-headset.jpg" alt="Gaming Headset" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">SteelSeries Arctis 7P Wireless Headset</h3>
+                    <p class="product-description">Premium wireless gaming headset with lossless 2.4GHz audio and 24-hour battery life.</p>
+                    <div class="product-price">$199.99</div>
+                    <div class="product-rating">Rating: ★★★★☆ (4.2/5)</div>
+                    <a href="https://amzn.to/4neVjRw" class="affiliate-button">View on Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="accessories">
+            <h2 class="section-title">Tech Accessories</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/power-bank.jpg" alt="Portable Power Bank" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Anker PowerCore 10000 Power Bank</h3>
+                    <p class="product-description">Ultra-compact portable charger with high-speed charging technology and multiple device compatibility.</p>
+                    <div class="product-price">$45.99</div>
+                    <div class="product-rating">
+                        <p>Rating: ★★★★☆ (4.5/5)</p>
+                    </div>
+                    <a href="https://amzn.to/46vuVM0" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/usb-hub.jpg" alt="USB-C Hub" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Anker USB-C Hub 7-in-1</h3>
+                    <p class="product-description">Expand your laptop connectivity with HDMI, USB 3.0 ports, SD card reader, and 100W Power Delivery.</p>
+                    <div class="product-price">$21.99 <small><strike>$25.99</strike></small></div>
+                    <div class="product-rating">★★★★☆ (4.5/5)</div>
+                    <a href="https://amzn.to/3IhCZYE" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="../images/laptop-stand.jpg" alt="Laptop Stand" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Rain Design mStand Laptop Stand</h3>
+                    <p class="product-description">Elegant aluminum laptop stand that improves ergonomics and provides better airflow for cooling.</p>
+                    <div class="product-price">$39.90 <small><strike>$50.00</strike></small></div>
+                    <div class="product-rating">★★★★☆ (4.8/5)</div>
+                    <a href="https://amzn.to/4gNz82t" class="affiliate-button">View on Amazon</a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Product Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Tech Enthusiasts Share Their Experience</h2>
+            
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Alex Chen</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">MacBook Air M4</div>
+                <div class="review-text">
+                    "Coming from an Intel MacBook, the M4 chip is incredibly fast and silent. No fan noise even during intensive tasks! Battery life is phenomenal - easily 14-16 hours of real-world use. Perfect for developers and content creators. The display is crisp and colors are vibrant."
+                </div>
+                <div class="review-date">Reviewed on January 11, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">GameMaster_Pro</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                    <span class="tech-badge">Gaming Expert</span>
+                </div>
+                <div class="review-product">ASUS ROG Strix G15</div>
+                <div class="review-text">
+                    "This laptop handles all my games at high settings! RTX 3050 delivers solid 1080p performance, and the AMD Ryzen 7 keeps everything smooth. Cooling system is excellent - stays cool even during 6-hour gaming sessions. The RGB keyboard adds a nice touch. Great value for gaming performance."
+                </div>
+                <div class="review-date">Reviewed on January 9, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Sophie Williams</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Sony WH-1000XM5 Headphones</div>
+                <div class="review-text">
+                    "Best noise-canceling headphones I've owned! The ANC blocks out airplane engines completely. Sound quality is audiophile-level with deep bass and clear highs. Comfort is outstanding for long flights. Quick charge feature is a lifesaver - 3 minutes gives hours of playback."
+                </div>
+                <div class="review-date">Reviewed on January 8, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">David Kim</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Apple AirPods Pro 2</div>
+                <div class="review-text">
+                    "Seamless integration with my iPhone ecosystem. The spatial audio is incredible for movies and music. Noise cancellation rivals over-ear headphones. Case fits perfectly in pocket and wireless charging is convenient. Best wireless earbuds for Apple users, hands down."
+                </div>
+                <div class="review-date">Reviewed on January 7, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Emily Carter</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                    <span class="tech-badge">Smart Home</span>
+                </div>
+                <div class="review-product">Amazon Echo Show 5</div>
+                <div class="review-text">
+                    "Perfect for my kitchen counter! I use it for recipes, timers, and video calls with family. The display is bright and responsive. Alexa integration works flawlessly with all my smart home devices. Great value for the features you get. Compact size is ideal for smaller spaces."
+                </div>
+                <div class="review-date">Reviewed on January 6, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Michael Torres</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">PlayStation DualSense Controller</div>
+                <div class="review-text">
+                    "The haptic feedback is revolutionary! You can feel every texture and impact in supported games. Adaptive triggers add incredible immersion - drawing a bow actually feels like drawing a bow. Build quality is solid and battery life is impressive. Gaming will never feel the same."
+                </div>
+                <div class="review-date">Reviewed on January 5, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Rachel Green</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Corsair K70 Core RGB Mechanical Keyboard</div>
+                <div class="review-text">
+                    "Typing feels amazing with the pre-lubricated switches! The sound dampening really works - much quieter than my old mechanical keyboard. RGB lighting is vibrant and customizable through iCUE software. Build quality is tank-like. Perfect for both gaming and productivity work."
+                </div>
+                <div class="review-date">Reviewed on January 4, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Chris Anderson</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Anker PowerCore 10000 Power Bank</div>
+                <div class="review-text">
+                    "Incredibly compact for 10000mAh capacity! Charges my iPhone 3+ times and fits easily in my pocket. Fast charging works great and the build quality feels premium. LED indicators are helpful to know remaining power. Essential travel companion - never leave home without it now."
+                </div>
+                <div class="review-date">Reviewed on January 2, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">TechEnthusiast_2025</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                    <span class="tech-badge">Power User</span>
+                </div>
+                <div class="review-product">Apple iPhone 15 (Renewed)</div>
+                <div class="review-text">
+                    "Switched from Android and I'm impressed! The A17 Pro chip handles everything smoothly - from video editing to gaming. Camera quality is outstanding, especially in low light. The renewed condition was perfect, couldn't tell it wasn't brand new. Great value for a premium device."
+                </div>
+                <div class="review-date">Reviewed on January 14, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Jessica Rodriguez</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Samsung Galaxy S24 Ultra</div>
+                <div class="review-text">
+                    "The S Pen functionality is a game-changer for my work presentations! The 200MP camera captures incredible detail, and the AI photo editing features save me hours. Battery easily lasts a full day of heavy use. This phone is a productivity powerhouse."
+                </div>
+                <div class="review-date">Reviewed on January 12, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Mark Thompson</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                    <span class="tech-badge">Mobile Expert</span>
+                </div>
+                <div class="review-product">Anker PowerWave Wireless Charger</div>
+                <div class="review-text">
+                    "Fast charging works exactly as advertised! Charges my iPhone 15 Pro at full speed and the LED indicator is helpful. The non-slip surface keeps my phone in place perfectly. Sleek design complements my desk setup. Great value for wireless charging convenience."
+                </div>
+                <div class="review-date">Reviewed on January 10, 2025</div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
             <div class="disclaimer">
                 <p><strong>Affiliate Disclaimer:</strong> This website contains affiliate links. As an Amazon Associate, we earn from qualifying purchases. This doesn't affect the price you pay, but it helps support our site and allows us to continue providing helpful product recommendations.</p>
                 <p style="margin-top: 1rem;">&copy; 2024 Best Products Hub. All rights reserved.</p>
-                <p style="margin-top: 0.5rem;"><a href="sitemap.html">Sitemap</a></p>
             </div>
         </div>
     </footer>
-    <script src="site-features/script.js"></script>
+   <script src="site-features/script.js"></script>
 
 </body>
-</html>
+</html></span>
+                    <span class="tech-badge">Power User</span>
+                </div>
+                <div class="review-product">Apple iPhone 15 (Renewed)</div>
+                <div class="review-text">
+                    "Switched from Android and I'm impressed! The A17 Pro chip handles everything smoothly - from video editing to gaming. Camera quality is outstanding, especially in low light. The renewed condition was perfect, couldn't tell it wasn't brand new. Great value for a premium device."
+                </div>
+                <div class="review-date">Reviewed on January 14, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Jessica Rodriguez</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Samsung Galaxy S24 Ultra</div>
+                <div class="review-text">
+                    "The S Pen functionality is a game-changer for my work presentations! The 200MP camera captures incredible detail, and the AI photo editing features save me hours. Battery easily lasts a full day of heavy use. This phone is a productivity powerhouse."
+                </div>
+                <div class="review-date">Reviewed on January 12, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Mark Thompson</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase
 
 
