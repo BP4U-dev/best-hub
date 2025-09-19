@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Products Hub</title>
+    <meta name="description" content="Learn more about Best Products Hub and our mission to help you find the best products at the best prices.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                <span style="display: inline-block; width: 60px; height: 60px; background-image: url('favicon.ico'); background-size: contain; background-repeat: no-repeat; margin-right: 15px;"></span>
+                Best Products Hub
+            </a>
+            <button class="hamburger" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="home-kitchen.html">Home & Kitchen</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="health-beauty.html">Health & Beauty</a></li>
+                <li><a href="sports-outdoors.html">Sports & Outdoors</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html" class="active">About</a></li><li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">About Best Products Hub</h1>
+            <p class="fade-in">Your trusted source for finding the best products at the best prices</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="content-section">
+            <h2 class="section-title">Our Mission</h2>
+            <p>At Best Products Hub, we're passionate about helping you make informed purchasing decisions. Our team of experts carefully curates and reviews products across various categories to bring you the best deals and recommendations.</p>
+            
+            <h2 class="section-title">What We Do</h2>
+            <ul>
+                <li>Research and review top-rated products</li>
+                <li>Compare prices across multiple retailers</li>
+                <li>Provide detailed buying guides and recommendations</li>
+                <li>Keep you updated on the latest deals and discounts</li>
+            </ul>
+            
+            <h2 class="section-title">Why Trust Us</h2>
+            <p>We maintain strict editorial independence and only recommend products we genuinely believe in. Our affiliate partnerships help support our site while ensuring you get the best possible prices.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="disclaimer">
+                <p><strong>Affiliate Disclaimer:</strong> This website contains affiliate links. As an Amazon Associate, we earn from qualifying purchases. This doesn't affect the price you pay, but it helps support our site and allows us to continue providing helpful product recommendations.</p>
+                <p style="margin-top: 1rem;">&copy; 2025 Best Products Hub. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;"><a href="sitemap.html">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
