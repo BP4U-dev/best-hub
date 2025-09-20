@@ -7,52 +7,15 @@
     <meta name="description" content="Discover the best home and kitchen products with our curated selection of top-rated items.">
     <link rel="stylesheet" href="site-features/styles.css">
     
-    <!-- Coming Soon Notification Styles -->
-    <style>
-        .coming-soon-notification {
-            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-            padding: 1rem 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
-        }
-        
-        .notification-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            color: white;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        
-        .notification-icon {
-            font-size: 1.3rem;
-            animation: pulse 2s infinite;
-        }
-        
-        .notification-text {
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        
-        @media (max-width: 768px) {
-            .notification-content {
-                font-size: 1rem;
-                flex-direction: column;
-                gap: 0.3rem;
-            }
-            
-            .coming-soon-notification {
-                padding: 0.8rem 0;
-            }
-        }
-    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CRSSDC7PC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', 'G-9CRSSDC7PC');
+</script>
+
 </head>
 <body>
     <header>
@@ -100,18 +63,312 @@
             </div>
         </section>
 
-        <!-- Coming Soon Notification -->
-        <div class="coming-soon-notification">
-            <div class="container">
-                <div class="notification-content">
-                    <span class="notification-icon">🚧</span>
-                    <span class="notification-text">This page is coming soon</span>
+        <section class="content-section" id="products">
+            <h2 class="section-title">Featured Home & Kitchen Products</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/rubbermaid-containers.jpg" alt="Rubbermaid Brilliance Pantry 10 Piece Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Rubbermaid Brilliance Pantry 10 Piece Set</h3>
+                    <p class="product-description">Clear and airtight food and pantry storage containers that keep food fresh longer with crystal-clear, BPA-free Tritan plastic.</p>
+                    <div class="product-price">$47.99</div>
+                    <a href="https://amzn.to/rubbermaid-containers" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/under-bed-storage.jpg" alt="Under Bed Storage Containers" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">2 Pack 100L Under Bed Storage Containers</h3>
+                    <p class="product-description">Low profile closet organizers and storage bins for dorm, foldable underbed bag for clothes, blankets, and more with clear window.</p>
+                    <div class="product-price">$9.99</div>
+                    <a href="https://amzn.to/under-bed-storage" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/closet-organizer.jpg" alt="ClosetMaid Modular Storage Shelf Unit" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">ClosetMaid Modular Storage Shelf Unit with 3 Shelves</h3>
+                    <p class="product-description">Wood closet organizer that's adjustable, stackable, with full backer and decorative trim for versatile storage solutions.</p>
+                    <div class="product-price">$86.02</div>
+                    <a href="https://amzn.to/closet-organizer" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/bath-towel-set.jpg" alt="Luxury White Bath Towel Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Luxury White Bath Towel Set of 8 Pieces</h3>
+                    <p class="product-description">100% Turkish Cotton 700 GSM highly absorbent towels including 2 bath towels, 2 hand towels, and 4 washcloths.</p>
+                    <div class="product-price">$39.99</div>
+                    <a href="https://amzn.to/bath-towel-set" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/tempur-pillow.jpg" alt="Tempur-Pedic TEMPUR-Cloud Pillow" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Tempur-Pedic TEMPUR-Cloud Pillow for Sleeping</h3>
+                    <p class="product-description">Premium memory foam pillow with soft, plush feel that adapts to your head, neck, and shoulders for personalized comfort.</p>
+                    <div class="product-price">$79.00</div>
+                    <a href="https://amzn.to/tempur-pillow" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/bamboo-sheets.jpg" alt="Cooling Bamboo Sheet Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">4 Piece Queen Sheet Sets, Cooling Sheets</h3>
+                    <p class="product-description">Blend rayon derived from bamboo with deep pocket up to 16", breathable and soft bed sheets with hotel silky feel.</p>
+                    <div class="product-price">$29.99</div>
+                    <a href="https://amzn.to/bamboo-sheets" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/microfiber-cloths.jpg" alt="Amazon Basics Microfiber Cleaning Cloths" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Amazon Basics Microfiber Cleaning Cloths</h3>
+                    <p class="product-description">Ultra absorbent, lint free, streak free cleaning cloths that are non-abrasive, reusable and washable. Pack of 24.</p>
+                    <div class="product-price">$10.04</div>
+                    <a href="https://amzn.to/microfiber-cloths" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/storage-drawers.jpg" alt="Sterilite 4-Pack 27 Quart Stacking Drawer" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Sterilite 4-Pack 27 Quart Stacking Drawer</h3>
+                    <p class="product-description">Clear storage closet organizer with white frame - stackable modular plastic drawers for clothes, accessories, and more.</p>
+                    <div class="product-price">$59.19</div>
+                    <a href="https://amzn.to/storage-drawers" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/roomba-vacuum.jpg" alt="iRobot Roomba 104 Vac Robot Vacuum" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">iRobot Roomba 104 Vac Robot Vacuum</h3>
+                    <p class="product-description">Amazon exclusive robot vacuum with intense power-lifting suction, LiDAR navigation, multi-surface cleaning, and self-charging.</p>
+                    <div class="product-price">$242.00</div>
+                    <a href="https://amzn.to/roomba-vacuum" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/canvas-wall-art.jpg" alt="Abstract Canvas Wall Art 3 Piece Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Abstract Canvas Wall Art - Large Size Decor</h3>
+                    <p class="product-description">3 piece set perfect for living room, bedroom & office decoration. Modern abstract design at 20x28 inches per piece.</p>
+                    <div class="product-price">$78.98</div>
+                    <a href="https://amzn.to/canvas-wall-art" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/moroccan-rug.jpg" alt="nuLOOM Moroccan Blythe Area Rug" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">nuLOOM 6' 7" x 9' Moroccan Blythe Area Rug</h3>
+                    <p class="product-description">Grey faded bohemian design area rug that's stain resistant, perfect for bedroom, dining room, living room, and office spaces.</p>
+                    <div class="product-price">$96.99</div>
+                    <a href="https://amzn.to/moroccan-rug" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/throw-pillows.jpg" alt="MIULEE Decorative Throw Pillow Covers" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">MIULEE Decorative Throw Pillow Covers</h3>
+                    <p class="product-description">Set of 2 beige boho accent throw pillows for couch and bed, 18x18 inch with broadside striped patchwork soft corduroy.</p>
+                    <div class="product-price">$11.99</div>
+                    <a href="https://amzn.to/throw-pillows" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/knife-set.jpg" alt="WÜSTHOF Classic Seven Piece Knife Block Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">WÜSTHOF Classic Seven Piece Knife Block Set</h3>
+                    <p class="product-description">7-piece German knife set with precision forged high carbon stainless steel and 15 slot wood block for professional cooking.</p>
+                    <div class="product-price">$390.00</div>
+                    <a href="https://amzn.to/knife-set" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/cast-iron-skillet.jpg" alt="Lodge 12 Inch Cast Iron Skillet" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Lodge 12 Inch Cast Iron Skillet with Red Silicone Hot Handle Holder</h3>
+                    <p class="product-description">Pre-seasoned frying pan for stove, oven, grill & campfire. Made in the USA with durable, nonstick cast iron cookware.</p>
+                    <div class="product-price">$42.99</div>
+                    <a href="https://amzn.to/cast-iron-skillet" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/all-clad-pans.jpg" alt="All-Clad HA1 Hard Anodized Nonstick Fry Pan Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">All-Clad HA1 Hard Anodized Nonstick Fry Pan Set</h3>
+                    <p class="product-description">3-piece cookware set with 8", 10", 12" skillets and lid, induction compatible, oven safe to 500°F for versatile cooking.</p>
+                    <div class="product-price">$199.99</div>
+                    <a href="https://amzn.to/all-clad-pans" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/ninja-air-fryer.jpg" alt="Ninja AF161 Max XL Air Fryer" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Ninja AF161 Max XL Air Fryer</h3>
+                    <p class="product-description">Cooks, crisps, roasts, bakes, reheats and dehydrates with 5.5 quart capacity and high gloss finish for healthier cooking.</p>
+                    <div class="product-price">$179.99</div>
+                    <a href="https://amzn.to/ninja-air-fryer" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/kitchenaid-mixer.jpg" alt="KitchenAid Artisan Series 5 Quart Stand Mixer" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">KitchenAid Artisan Series 5 Quart Tilt Head Stand Mixer</h3>
+                    <p class="product-description">Professional stand mixer with pouring shield and removable bowl in Aqua Sky color for all your baking needs.</p>
+                    <div class="product-price">$499.00</div>
+                    <a href="https://amzn.to/kitchenaid-mixer" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/instant-pot.jpg" alt="Instant Pot Duo 7-in-1 Electric Pressure Cooker" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Instant Pot Duo 7-in-1 Electric Pressure Cooker</h3>
+                    <p class="product-description">Slow cooker, rice steamer, sauté, yogurt maker, warmer & sterilizer with app containing over 800 recipes. 6 quart capacity.</p>
+                    <div class="product-price">$99.99</div>
+                    <a href="https://amzn.to/instant-pot" class="affiliate-button">View on Amazon</a>
                 </div>
             </div>
-        </div>
-        
-        <!-- Content truncated for brevity -->
+        </section>
     </main>
+
+    <!-- Product Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Maria S.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Rubbermaid Brilliance Pantry 10 Piece Set</div>
+                <div class="review-text">
+                    "These containers have completely transformed my pantry organization! The airtight seals keep everything fresh for so much longer, and the clear design makes it easy to see what I have. No more stale cereal or crackers!"
+                </div>
+                <div class="review-date">Reviewed on January 18, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Robert K.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Lodge 12 Inch Cast Iron Skillet</div>
+                <div class="review-text">
+                    "This skillet is a game-changer! The pre-seasoning is perfect and it cooks everything evenly. From steaks to cornbread, everything comes out amazing. Built to last a lifetime and the heat retention is incredible."
+                </div>
+                <div class="review-date">Reviewed on January 16, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Jennifer L.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Instant Pot Duo 7-in-1</div>
+                <div class="review-text">
+                    "This has revolutionized my cooking! I use it almost daily for everything from quick weeknight dinners to weekend meal prep. The app with recipes is so helpful, and cleanup is a breeze. Best kitchen investment ever."
+                </div>
+                <div class="review-date">Reviewed on January 14, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">David M.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">iRobot Roomba 104 Vac</div>
+                <div class="review-text">
+                    "This robot vacuum is fantastic! It navigates around furniture perfectly and the suction power is impressive. Coming home to clean floors every day is such a luxury. The self-charging feature means I never have to worry about it."
+                </div>
+                <div class="review-date">Reviewed on January 12, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Amanda R.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Luxury White Bath Towel Set</div>
+                <div class="review-text">
+                    "These towels are incredibly soft and absorbent! The Turkish cotton quality is evident from the first use. They've maintained their plushness even after multiple washes. Feels like a spa experience every day."
+                </div>
+                <div class="review-date">Reviewed on January 10, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Thomas B.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">KitchenAid Artisan Series Stand Mixer</div>
+                <div class="review-text">
+                    "This mixer is a powerhouse! I bake regularly and it handles everything from light whipping to heavy bread dough with ease. The Aqua Sky color is beautiful and it's built like a tank. Worth every penny for serious bakers."
+                </div>
+                <div class="review-date">Reviewed on January 8, 2025</div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">

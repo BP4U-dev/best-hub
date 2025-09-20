@@ -7,52 +7,15 @@
     <meta name="description" content="Discover the latest fashion trends and top-rated clothing items with our curated selection.">
     <link rel="stylesheet" href="site-features/styles.css">
     
-    <!-- Coming Soon Notification Styles -->
-    <style>
-        .coming-soon-notification {
-            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-            padding: 1rem 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
-        }
-        
-        .notification-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            color: white;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        
-        .notification-icon {
-            font-size: 1.3rem;
-            animation: pulse 2s infinite;
-        }
-        
-        .notification-text {
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        
-        @media (max-width: 768px) {
-            .notification-content {
-                font-size: 1rem;
-                flex-direction: column;
-                gap: 0.3rem;
-            }
-            
-            .coming-soon-notification {
-                padding: 0.8rem 0;
-            }
-        }
-    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CRSSDC7PC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', 'G-9CRSSDC7PC');
+</script>
+
 </head>
 <body>
     <header>
@@ -100,18 +63,322 @@
             </div>
         </section>
 
-        <!-- Coming Soon Notification -->
-        <div class="coming-soon-notification">
-            <div class="container">
-                <div class="notification-content">
-                    <span class="notification-icon">🚧</span>
-                    <span class="notification-text">This page is coming soon</span>
+        <section class="content-section" id="products">
+            <h2 class="section-title">Featured Fashion Items</h2>
+            <div class="product-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/champion-sports-bra.jpg" alt="Champion Women's Sports Bra" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Champion Women's Sports Bra, Maximum Support, High-impact Sports Bra</h3>
+                    <p class="product-description">Maximum support sports bra designed for high-impact activities with moisture-wicking fabric and comfortable compression fit.</p>
+                    <div class="product-price">$28.99</div>
+                    <a href="https://amzn.to/champion-sports-bra" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/nike-revolution-6.jpg" alt="Nike Revolution 6 Men's Running Shoes" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Nike Revolution 6 Men's Road Running Shoes</h3>
+                    <p class="product-description">Comfortable road running shoes in Iron Grey/White/Smoke Grey with responsive foam cushioning and durable design for everyday runs.</p>
+                    <div class="product-price">$71.30</div>
+                    <a href="https://amzn.to/nike-revolution-6" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/crz-yoga-leggings.jpg" alt="CRZ YOGA Butterluxe High Waisted Leggings" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">CRZ YOGA Butterluxe High Waisted Lounge Legging 25"</h3>
+                    <p class="product-description">Buttery soft workout yoga pants for women with high waisted design, perfect for lounging, yoga, and everyday wear.</p>
+                    <div class="product-price">$32.00</div>
+                    <a href="https://amzn.to/crz-yoga-leggings" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/gold-hoop-earrings.jpg" alt="14K Gold Plated Hoop Earrings Set" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">14K Gold Plated Hoop Earrings for Women, 4 Pairs Sterling Silver Post</h3>
+                    <p class="product-description">Small hoops gold huggie earrings set for women and men in sizes 13mm, 15mm, 20mm, 25mm with sterling silver posts.</p>
+                    <div class="product-price">$12.99</div>
+                    <a href="https://amzn.to/gold-hoop-earrings" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/fossil-watch.jpg" alt="Fossil Men's Coachman Chronograph Watch" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Fossil Men's Coachman Quartz Stainless Steel and Leather Chronograph Watch</h3>
+                    <p class="product-description">Classic chronograph watch with stainless steel case and leather strap, featuring reliable quartz movement and timeless design.</p>
+                    <div class="product-price">$104.00</div>
+                    <a href="https://amzn.to/fossil-watch" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/pandora-bracelet.jpg" alt="PANDORA Moments Snake Chain Slider Bracelet" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">PANDORA Moments Snake Chain Slider Bracelet</h3>
+                    <p class="product-description">Charm bracelet for women in sterling silver with clear cubic zirconia, comes with gift box. Perfect gift for her at 11" length.</p>
+                    <div class="product-price">$80.00</div>
+                    <a href="https://amzn.to/pandora-bracelet" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/silk-scarf.jpg" alt="Head Scarf for Women Like Silk" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Head Scarf for Women Like Silk Scarf Hair Scarf Printed Square Scarf</h3>
+                    <p class="product-description">Beautiful printed square bandana for women measuring 35 inches, perfect as a hair accessory or fashion statement piece.</p>
+                    <div class="product-price">$6.99</div>
+                    <a href="https://amzn.to/silk-scarf" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/ray-ban-aviators.jpg" alt="Ray-Ban RB3025 Metal Aviator Sunglasses" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Ray-Ban RB3025 Metal Aviator Sunglasses For Men For Women</h3>
+                    <p class="product-description">Classic aviator sunglasses with metal frame and accessory eyewear kit bundle. Timeless style with UV protection for all-day wear.</p>
+                    <div class="product-price">$191.00</div>
+                    <a href="https://amzn.to/ray-ban-aviators" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/fossil-crossbody-bag.jpg" alt="Fossil Women's Kinley Crossbody Bag" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Fossil Women's Kinley Crossbody Bag</h3>
+                    <p class="product-description">Stylish crossbody bag with premium leather construction, perfect size for everyday essentials with adjustable strap and secure closure.</p>
+                    <div class="product-price">$72.27</div>
+                    <a href="https://amzn.to/fossil-crossbody" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/allbirds-sneakers.jpg" alt="Allbirds Men's Tree Runner Sneakers" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Allbirds Men's Tree Runner, Everyday Sneakers</h3>
+                    <p class="product-description">Machine washable shoes made with natural materials, perfect everyday sneakers with sustainable construction and comfortable fit.</p>
+                    <div class="product-price">$100.00</div>
+                    <a href="https://amzn.to/allbirds-sneakers" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/dr-martens-boots.jpg" alt="Dr. Martens Women's 1460 Vonda Fashion Boot" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Dr. Martens Women's 1460 Vonda Mono Softy T Fashion Boot</h3>
+                    <p class="product-description">Classic fashion boots with signature Dr. Martens styling, durable construction, and comfortable fit for everyday wear and style.</p>
+                    <div class="product-price">$156.97</div>
+                    <a href="https://amzn.to/dr-martens-boots" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/nike-air-max-270.jpg" alt="Nike Men's Air Max 270 Sneaker" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Nike Men's Air Max 270 Sneaker</h3>
+                    <p class="product-description">Iconic Air Max sneakers with large heel Air unit for maximum cushioning, modern design, and all-day comfort for active lifestyles.</p>
+                    <div class="product-price">$187.85</div>
+                    <a href="https://amzn.to/nike-air-max-270" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/champion-hoodie.jpg" alt="Champion Men's Powerblend Hoodie" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Champion Men's Hoodie, Powerblend, Fleece Comfortable Hoodie</h3>
+                    <p class="product-description">Comfortable fleece sweatshirt for men available in regular or big & tall sizes with Powerblend technology for reduced pilling and shrinkage.</p>
+                    <div class="product-price">$27.90</div>
+                    <a href="https://amzn.to/champion-hoodie" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/levis-511-jeans.jpg" alt="Levi's Men's 511 Slim Fit Jeans" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Levi's Men's 511 Slim Fit Jeans (Also Available in Big & Tall)</h3>
+                    <p class="product-description">Classic slim fit jeans with timeless Levi's styling, comfortable stretch fabric, and versatile design perfect for everyday wear.</p>
+                    <div class="product-price">$69.50</div>
+                    <a href="https://amzn.to/levis-511-jeans" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/amazon-essentials-polo.jpg" alt="Amazon Essentials Men's Cotton Polo Shirt" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Amazon Essentials Men's Regular-Fit Cotton Pique Polo Shirt</h3>
+                    <p class="product-description">Classic cotton pique polo shirt in regular fit, available in big & tall sizes. Essential wardrobe staple with comfortable cut and quality construction.</p>
+                    <div class="product-price">$16.10</div>
+                    <a href="https://amzn.to/amazon-essentials-polo" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/floral-maxi-dress.jpg" alt="PRETTYGARDEN Spring Long Sleeve Maxi Dress" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">PRETTYGARDEN Womens Spring Long Sleeve Wrap V Neck Ruffle Floral Maxi Dress</h3>
+                    <p class="product-description">Casual tie waist boho chiffon flowy long dress with wrap V-neck design, perfect for spring and summer occasions with feminine floral print.</p>
+                    <div class="product-price">$39.89</div>
+                    <a href="https://amzn.to/floral-maxi-dress" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/oversized-sweater.jpg" alt="ANRABESS Women Oversized Sweaters" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">ANRABESS Women Oversized Sweaters Batwing Long Sleeve 2025 Fall Outfits</h3>
+                    <p class="product-description">Crewneck casual knit side slit fashion pullover top with oversized batwing sleeves, perfect for trendy fall 2025 outfits.</p>
+                    <div class="product-price">$26.99</div>
+                    <a href="https://amzn.to/oversized-sweater" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/levis-721-jeans.jpg" alt="Levi's Women's 721 High Rise Skinny Jeans" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">Levi's Women's 721 High Rise Skinny Jeans</h3>
+                    <p class="product-description">High rise skinny jeans with flattering fit and classic Levi's quality, perfect for creating versatile looks with comfortable stretch fabric.</p>
+                    <div class="product-price">$29.99</div>
+                    <a href="https://amzn.to/levis-721-jeans" class="affiliate-button">View on Amazon</a>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="images/colored-distressed-jeans.jpg" alt="High Waisted Colored Stretch Skinny Jeans" width="600" height="400">
+                    </div>
+                    <h3 class="product-title">High Waisted-Rise Colored Stretch Skinny Destroyed Ripped Distressed Jeans</h3>
+                    <p class="product-description">Trendy colored stretch skinny jeans for women in olive, mustard, and red with destroyed ripped distressed details for edgy style.</p>
+                    <div class="product-price">$24.99</div>
+                    <a href="https://amzn.to/colored-distressed-jeans" class="affiliate-button">View on Amazon</a>
                 </div>
             </div>
-        </div>
-        
-        <!-- Content truncated for brevity -->
+        </section>
     </main>
+
+    <!-- Product Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Sophie H.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">CRZ YOGA Butterluxe High Waisted Leggings</div>
+                <div class="review-text">
+                    "These leggings are incredibly soft and comfortable! The buttery texture lives up to the name and they don't roll down during workouts. Perfect for yoga, lounging, or running errands. I've ordered them in multiple colors!"
+                </div>
+                <div class="review-date">Reviewed on January 18, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Michael D.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Levi's Men's 511 Slim Fit Jeans</div>
+                <div class="review-text">
+                    "Perfect fit and classic Levi's quality! These jeans are comfortable with just the right amount of stretch. They maintain their shape after washing and the slim fit is exactly what I was looking for. Great everyday jeans."
+                </div>
+                <div class="review-date">Reviewed on January 16, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Emma R.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Ray-Ban RB3025 Metal Aviator Sunglasses</div>
+                <div class="review-text">
+                    "Classic aviators that never go out of style! The quality is excellent and they provide great UV protection. They came with a nice accessory kit and the fit is perfect. Worth the investment for genuine Ray-Bans."
+                </div>
+                <div class="review-date">Reviewed on January 14, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">James L.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Nike Men's Air Max 270 Sneaker</div>
+                <div class="review-text">
+                    "These sneakers are incredibly comfortable with amazing cushioning! The Air Max technology really makes a difference for all-day wear. Great for both casual wear and light workouts. The design is modern and stylish."
+                </div>
+                <div class="review-date">Reviewed on January 12, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Ashley T.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">PRETTYGARDEN Spring Long Sleeve Maxi Dress</div>
+                <div class="review-text">
+                    "Beautiful dress with gorgeous floral print! The fabric is flowy and comfortable, and the wrap style is very flattering. Perfect for spring occasions and the tie waist creates a nice silhouette. Great quality for the price!"
+                </div>
+                <div class="review-date">Reviewed on January 10, 2025</div>
+            </div>
+
+            <div class="review-card fade-in">
+                <div class="review-header">
+                    <div class="reviewer-name">Ryan K.</div>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="verified-purchase">✓ Verified Purchase</span>
+                </div>
+                <div class="review-product">Champion Men's Powerblend Hoodie</div>
+                <div class="review-text">
+                    "Great quality hoodie for the price! The Powerblend fabric is soft and doesn't pill after washing. Perfect weight for layering and the fit is exactly as expected. Comfortable for lounging or casual wear."
+                </div>
+                <div class="review-date">Reviewed on January 8, 2025</div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
