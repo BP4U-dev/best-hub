@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# Block unnecessary files that don't need indexing
+Disallow: /site-features/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /images/
+
+# Allow important pages explicitly
+Allow: /index.html
+Allow: /electronics.html
+Allow: /home-kitchen.html
+Allow: /fashion.html
+Allow: /health-beauty.html
+Allow: /sports-outdoors.html
+Allow: /books.html
+Allow: /blog.html
+Allow: /about.html
+Allow: /contact.html
+
+# Sitemap location
 Sitemap: https://bp4u-dev.github.io/best-hub/sitemap.xml

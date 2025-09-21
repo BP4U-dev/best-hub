@@ -2,70 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/index.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bp4u-dev.github.io/best-hub/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bp4u-dev.github.io/best-hub/contact.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://bp4u-dev.github.io/best-hub/electronics.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/home-kitchen.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/fashion.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/health-beauty.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/sports-outdoors.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/books.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bp4u-dev.github.io/best-hub/about.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bp4u-dev.github.io/best-hub/contact.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog-2.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog-3.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog-4.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog-post.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog-post-2.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/blog-post-3.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bp4u-dev.github.io/best-hub/sitemap.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 </urlset>

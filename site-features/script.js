@@ -879,3 +879,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(rainbowStyles);
+
+    // ========================================
+    // ELECTRONICS PAGE SPECIFIC FUNCTIONALITY
+    // ========================================
+
+    // Enhanced smooth scrolling for category links
+    function initializeElectronicsPageFeatures() {
+        // Get all category tag links
+        const categoryLinks = document.querySelectorAll('.category-tag');
+        
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get the target section ID from href
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    // Calculate offset for fixed header
+                    const headerHeight = 80;
+                    const elementPosition = targetSection.offsetTop;
+                    const offsetPosition = elementPosition - headerHeight;
+                    
+                    // Smooth scroll to target
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    }
+
+    // Initialize electronics page features when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if we're on the electronics page
+        if (document.querySelector('.category-tag')) {
+            initializeElectronicsPageFeatures();
+        }
+    });

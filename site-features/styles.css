@@ -1787,3 +1787,17 @@
                 padding: 1.5rem;
             }
         }
+
+        /* ========================================
+           ELECTRONICS PAGE SPECIFIC STYLES
+           ======================================== */
+
+        /* Smooth scrolling for the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Add some padding to section tops to account for fixed header */
+        .content-section {
+            scroll-margin-top: 80px;
+        }
