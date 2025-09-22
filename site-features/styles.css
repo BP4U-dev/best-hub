@@ -4,6 +4,384 @@
             box-sizing: border-box;
         }
 
+        /* Personal Story Section */
+.personal-story {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+.story-content h3 {
+    color: #667eea;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.story-content p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.story-content p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.achievement-badge {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.achievement-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Memorial Section */
+.memorial-section {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(50, 50, 50, 0.9) 100%);
+    padding: 3rem 0;
+    margin: 3rem 0;
+    color: white;
+    text-align: center;
+}
+
+.memorial-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.memorial-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #87CEEB; /* Light blue color */
+}
+
+/* Pink Heart Box */
+.heart-box {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b9d, #ff8aa8);
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.heart-box::before {
+    content: '💖';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 2rem;
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+.heart-box::after {
+    content: '💖';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    font-size: 1.5rem;
+    animation: heartbeat 2s ease-in-out infinite reverse;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.memorial-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+/* Memorial Quote */
+.memorial-quote {
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #ff6b9d;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.memorial-quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #E6E6FA;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.memorial-message {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.9;
+    color: #E6E6FA; /* Lavender color */
+    margin-top: 1rem;
+}
+
+/* Personal Story Section */
+.personal-story {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+.story-content h3 {
+    color: #667eea;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.story-content p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.story-content p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.achievement-badge {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.achievement-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Memorial Section */
+.memorial-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.memorial-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.memorial-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+/* Pink Heart Box */
+.heart-box {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b9d, #ff8aa8);
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.heart-box::before {
+    content: '💖';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 2rem;
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+.heart-box::after {
+    content: '💖';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    font-size: 1.5rem;
+    animation: heartbeat 2s ease-in-out infinite reverse;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.memorial-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+/* Memorial Quote */
+.memorial-quote {
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.memorial-quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.memorial-message {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.9;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .personal-story {
+        padding: 2rem 1.5rem;
+        margin: 1.5rem;
+    }
+    
+    .story-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .story-content p {
+        font-size: 1rem;
+    }
+    
+    .achievements {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .achievement-badge {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .memorial-content {
+        padding: 1.5rem;
+    }
+    
+    .heart-box {
+        padding: 1.2rem 2rem;
+    }
+    
+    .memorial-text {
+        font-size: 1.5rem;
+    }
+    
+    .memorial-quote p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-story {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .story-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .memorial-section {
+        padding: 2rem 0;
+    }
+    
+    .memorial-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .heart-box {
+        padding: 1rem 1.5rem;
+    }
+    
+    .memorial-text {
+        font-size: 1.3rem;
+    }
+    
+    .memorial-quote {
+        padding: 0.8rem 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .memorial-quote p {
+        font-size: 0.9rem;
+    }
+}
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -208,9 +586,6 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
         }
 
         .product-card:hover {
@@ -237,7 +612,7 @@
             width: 100%;
             height: 100%;
             display: block;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         
@@ -253,7 +628,6 @@
             color: #666;
             margin-bottom: 1rem;
             line-height: 1.5;
-            flex-grow: 1;
         }
 
         .product-price {
@@ -1127,6 +1501,16 @@
             font-size: 0.8rem;
         }
 
+           /* Smooth scrolling for the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Add some padding to section tops to account for fixed header */
+        .content-section {
+            scroll-margin-top: 80px;
+        }
+
         /* Newsletter Widget */
         .newsletter-signup {
             text-align: center;
@@ -1804,4 +2188,112 @@
         /* Add some padding to section tops to account for fixed header */
         .content-section {
             scroll-margin-top: 80px;
+        }
+
+        /* Contact Form Specific Styles */
+        .contact-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 4rem 3rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .newsletter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .newsletter-checkbox input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .success-message,
+        .error-message {
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            display: none;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
         }
