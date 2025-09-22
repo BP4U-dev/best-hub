@@ -6,21 +6,54 @@
     <title>Contact Me - Best Products Hub</title>
     <link rel="stylesheet" href="site-features/styles.css">
 
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Best Products Hub",
+      "url": "https://bestproductshub.com",
+      "description": "Find the best Amazon products with expert reviews and unbeatable deals. Shop top-rated electronics, home essentials, fashion, beauty products & more.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bestproductshub.com/search?q={search_term_string}",
+        "@id": "https://bestproductshub.com/search",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Best Products Hub",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bestproductshub.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+
 </head>
 <body>
     <header>
-        <nav class="container">
+         <nav class="container">
             <a href="index.html" class="logo" style="display: flex; align-items: center;">
                 <span style="display: inline-block; width: 60px; height: 60px; background-image: url('site-features/favicon.ico'); background-size: contain; background-repeat: no-repeat; margin-right: 15px;"></span>
                 Best Products Hub
             </a>
-            <ul class="nav-links">
+            <button class="hamburger" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="home-kitchen.html">Home & Kitchen</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="health-beauty.html">Health & Beauty</a></li>
+                <li><a href="sports-outdoors.html">Sports & Outdoors</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="blog.html">Blog</a></li><li><a href="about.html">About</a></li>
+                <li><a href="contact.html"class="active">Contact</a></li>
             </ul>
-        </nav>
     </header>
 
     <section class="hero" style="padding: 2rem 0;">
