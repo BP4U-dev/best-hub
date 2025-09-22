@@ -1,3 +1,9 @@
+// Google Analytics initialization
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-9CRSSDC7PC');
+
 document.addEventListener('DOMContentLoaded', function() {
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -920,3 +926,32 @@ document.addEventListener('DOMContentLoaded', function() {
             initializeElectronicsPageFeatures();
         }
     });
+
+    // Enhanced smooth scrolling for category links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all category tag links
+            const categoryLinks = document.querySelectorAll('.category-tag');
+            
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Get the target section ID from href
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        // Calculate offset for fixed header
+                        const headerHeight = 80;
+                        const elementPosition = targetSection.offsetTop;
+                        const offsetPosition = elementPosition - headerHeight;
+                        
+                        // Smooth scroll to target
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
