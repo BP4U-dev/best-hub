@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You - Best Products Hub</title>
   <link rel="stylesheet" href="site-features/styles.css">
+  <link rel="icon" href="site-features/favicon.ico">
+  <style>
+    .thank-you-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .thank-you-wrapper h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    .thank-you-wrapper p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .return-btn {
+      background-color: #0077cc;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .return-btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body>
-  <main class="container" style="text-align: center; padding: 3rem;">
-    <h1>Thank You!</h1>
-    <p>Your message has been sent successfully. I’ll get back to you soon!</p>
-    <a href="index.html" class="submit-btn">Return to Homepage</a>
+  <main class="thank-you-wrapper">
+    <h1>🎉 Thank You!</h1>
+    <p>Your message has been sent successfully. I’ll get back to you as soon as possible.</p>
+    <a href="index.html" class="return-btn">Return to Homepage</a>
   </main>
 </body>
 </html>
