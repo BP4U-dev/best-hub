@@ -501,6 +501,22 @@
             border-bottom: 2px solid #667eea;
         }
 
+        /* Donate button in nav */
+        .nav-links .donate-link {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-weight: 700;
+            border: 0;
+            box-shadow: 0 4px 15px rgba(238, 90, 36, 0.35);
+        }
+        .nav-links .donate-link:hover {
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(238, 90, 36, 0.5);
+        }
+
         /* Hero Section */
         .hero {
             text-align: center;
