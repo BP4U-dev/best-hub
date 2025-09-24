@@ -5,7 +5,7 @@
     <title>The Ultimate Guide to Choosing Wireless Headphones in 2025 | Best Products Hub</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tech Expert">
+    <meta name="author" content="Home Tech Expert">
     <meta name="description" content="Complete guide to choosing the perfect wireless headphones in 2025. In-depth reviews, comparisons, and buying advice for every budget and use case.">
     <meta name="keywords" content="wireless headphones 2025, headphone reviews, best headphones, noise cancelling headphones, Sony WH-1000XM5, Apple AirPods Pro, headphone buying guide">
     
@@ -31,23 +31,462 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://bestproductshub.com/blog-post.html">
     
-    <link rel="stylesheet" href="site-features/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a.active {
+            color: #667eea;
+            font-weight: 600;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .hamburger {
+            display: none;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        @media (max-width: 900px) {
+            .hamburger {
+                display: block !important;
+                visibility: visible !important;
+            }
+        }
+        
+        .hamburger-box {
+            display: inline-block;
+            position: relative;
+            width: 24px;
+            height: 18px;
+        }
+        
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #333;
+            border-radius: 2px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .hamburger-inner {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+            content: "";
+            left: 0;
+        }
+        
+        .hamburger-inner::before { top: -8px; }
+        .hamburger-inner::after { top: 8px; }
+        
+        .hamburger[aria-expanded="true"] .hamburger-inner {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        
+        .hamburger[aria-expanded="true"] .hamburger-inner::before {
+            transform: rotate(90deg) translateX(0);
+            top: 0;
+        }
+        
+        .hamburger[aria-expanded="true"] .hamburger-inner::after {
+            opacity: 0;
+        }
+
+        /* Hero Section - Reduced padding */
+        .hero {
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        /* Blog Meta Info */
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        /* Post Like Button */
+        .post-like {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .post-like-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .post-like-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .post-like-btn.liked {
+            background: #e74c3c;
+            border-color: #c0392b;
+            color: white;
+        }
+
+        /* Main Content - Reduced margins */
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            margin: 1rem 0;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .blog-content h2 {
+            color: #333;
+            font-size: 1.8rem;
+            margin: 1.5rem 0 1rem 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .blog-content h3 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.8rem 0;
+        }
+
+        .blog-content p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .blog-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Product Recommendations */
+        .product-recommendations {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .product-recommendations h3 {
+            color: #333;
+            margin: 1rem 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .affiliate-button {
+            display: inline-block;
+            margin: 0.8rem 0;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .affiliate-button:hover {
+            background: #0056b3;
+        }
+
+        /* Comments Section - Reduced spacing */
+        .comments-section {
+            max-width: 800px;
+            margin: 1.5rem auto;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .comment-form {
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .comment-form h4 {
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .comment-form textarea {
+            resize: vertical;
+        }
+
+        .comment-form button {
+            background: #007bff;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .comment {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-bottom: 0.8rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .like-btn {
+            background: none;
+            border: 1px solid #ddd;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            cursor: pointer;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+
+        .like-btn:hover {
+            background: #f8f9fa;
+        }
+
+        .like-btn.liked {
+            color: #e74c3c;
+            border-color: #e74c3c;
+        }
+
+        .reply {
+            margin-left: 2rem;
+            margin-top: 0.8rem;
+            padding: 0.8rem;
+            background: #f8f9fa;
+            border-left: 3px solid #007bff;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .nav-links {
+                position: absolute;
+                right: 16px;
+                top: 72px;
+                left: auto;
+                background: rgba(255, 255, 255, 0.98);
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+                padding: 12px 16px;
+                flex-direction: column;
+                gap: 0.75rem;
+                border: 1px solid rgba(0,0,0,0.06);
+                transform-origin: top right;
+                transform: scale(0.95);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s ease, transform 0.2s ease;
+                visibility: hidden;
+                z-index: 1002;
+            }
+            
+            .nav-links.open {
+                opacity: 1;
+                transform: scale(1);
+                pointer-events: auto;
+                visibility: visible;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .blog-content {
+                padding: 1.5rem;
+            }
+
+            .post-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 1.5rem 0 1rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .blog-content {
+                padding: 1rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
     
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CRSSDC7PC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);} 
-  gtag('js', new Date());
-  gtag('config', 'G-9CRSSDC7PC');
-</script>
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CRSSDC7PC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-9CRSSDC7PC');
+    </script>
 </head>
 <body>
     <header>
         <nav class="container">
             <a href="index.html" class="logo" style="display: flex; align-items: center;">
-                <span style="display: inline-block; width: 60px; height: 60px; background-image: url('site-features/favicon.ico'); background-size: contain; background-repeat: no-repeat; margin-right: 15px;"></span>
+                <span style="display: inline-block; width: 60px; height: 60px; background-image: url('favicon.ico'); background-size: contain; background-repeat: no-repeat; margin-right: 15px;"></span>
                 Best Products Hub
             </a>
             <button class="hamburger" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">
@@ -64,7 +503,9 @@
                 <li><a href="sports-outdoors.html">Sports & Outdoors</a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="about.html">About</a></li><li><a href="donate.html" class="donate-link">Donate</a></li><li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -73,16 +514,23 @@
         <div class="container">
             <h1 class="fade-in">The Ultimate Guide to Choosing Wireless Headphones in 2025</h1>
             <p class="fade-in">In-depth review with hands-on testing, comparisons, and buying advice</p>
-            <div class="post-meta" style="margin-top: 1rem; color: #666;">
-                <span>📅 September 15, 2025</span>
-                <span style="margin: 0 1rem;">👤 Tech Expert</span>
+            
+            <div class="post-meta fade-in">
+                <span>📅 August 12, 2025</span>
+                <span>👤 Home Tech Expert</span>
                 <span>📖 8 min read</span>
+            </div>
+
+            <div class="post-like fade-in">
+                <button class="post-like-btn" id="post-like-btn" data-likes="1247">
+                    ❤️ <span class="like-count">1,247</span> likes
+                </button>
             </div>
         </div>
     </section>
 
     <main class="container">
-        <article class="blog-content fade-in" style="max-width: 800px; margin: 0 auto; padding: 2rem 0;">
+        <article class="blog-content fade-in">
             
             <h2>Introduction: Why Picking the Right Headphones Matters</h2>
             
@@ -101,7 +549,7 @@
             <p>Active Noise Cancellation (ANC) has become a must-have feature, especially if you're commuting, studying in noisy dorms, or just want some peace while gaming. The best ANC headphones now use adaptive technology—meaning they adjust based on your environment.</p>
 
             <h3>🔋 3. Battery Life</h3>
-            <p>This is a big one. Nobody wants to be stuck with dead headphones during a lecture or workout. Aim for at least 30 hours of playbook for over-ear headphones and 8+ hours for earbuds. Bonus points if they have fast charging (10 minutes of charge = a few hours of use).</p>
+            <p>This is a big one. Nobody wants to be stuck with dead headphones during a lecture or workout. Aim for at least 30 hours of playback for over-ear headphones and 8+ hours for earbuds. Bonus points if they have fast charging (10 minutes of charge = a few hours of use).</p>
 
             <h3>📱 4. Connectivity & Features</h3>
             <p>In 2025, multipoint connectivity is almost standard. This means you can connect your headphones to your laptop and phone at the same time—seamlessly switching between Zoom calls and music. Also, check for Bluetooth 5.3 or newer, which ensures lower latency and better range.</p>
@@ -116,35 +564,35 @@
 
             <p>Here are my top picks after weeks of testing. I broke them down into categories so you can easily find what fits your needs.</p>
 
-            <div class="product-recommendations" style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+            <div class="product-recommendations">
                 
                 <h3>🏆 Best Overall: Sony WH-1000XM5 Premium Noise Canceling Headphones</h3>
                 <p><strong>Why I love them:</strong> Sony continues to dominate the ANC headphone game. The WH-1000XM5 offers crystal-clear sound, industry-leading noise cancellation, and a ridiculous 30-hour battery life.</p>
                 <p><strong>Best for:</strong> Anyone who wants the best mix of sound, comfort, and smart features.</p>
                 <p><strong>Price:</strong> $328.00 (was $399.99)</p>
                 <p><strong>Downside:</strong> Premium pricing, but worth every penny.</p>
-                <a href="https://amzn.to/46bZo2K" class="affiliate-button" style="display: inline-block; margin: 1rem 0; padding: 0.5rem 1rem; background: #007bff; color: white; text-decoration: none; border-radius: 4px;">View on Amazon</a>
+                <a href="https://amzn.to/46bZo2K" class="affiliate-button">View on Amazon</a>
 
                 <h3>💸 Best Budget: Apple AirPods Pro 2 Wireless Earbuds</h3>
                 <p><strong>Why I love them:</strong> At $199, these earbuds punch way above their weight. Incredible ANC, spatial audio, and seamless Apple ecosystem integration make them an unbeatable value.</p>
                 <p><strong>Best for:</strong> iPhone users and anyone wanting premium features without breaking the bank.</p>
                 <p><strong>Price:</strong> $199.00 (was $249.00)</p>
                 <p><strong>Downside:</strong> Best experience is limited to Apple devices.</p>
-                <a href="https://amzn.to/42y183W" class="affiliate-button" style="display: inline-block; margin: 1rem 0; padding: 0.5rem 1rem; background: #007bff; color: white; text-decoration: none; border-radius: 4px;">View on Amazon</a>
+                <a href="https://amzn.to/42y183W" class="affiliate-button">View on Amazon</a>
 
                 <h3>🎶 Best for Gaming: SteelSeries Arctis Nova 7P Wireless Gaming Headset</h3>
                 <p><strong>Why I love them:</strong> If you care about gaming performance above all else, SteelSeries delivers. The Arctis Nova 7P has incredible spatial audio, crystal-clear mic, and 38-hour battery life.</p>
                 <p><strong>Best for:</strong> Serious gamers and streamers.</p>
                 <p><strong>Price:</strong> $199.99</p>
                 <p><strong>Downside:</strong> Gaming-focused design might not appeal to casual users.</p>
-                <a href="https://amzn.to/4pLMKiK" class="affiliate-button" style="display: inline-block; margin: 1rem 0; padding: 0.5rem 1rem; background: #007bff; color: white; text-decoration: none; border-radius: 4px;">View on Amazon</a>
+                <a href="https://amzn.to/4pLMKiK" class="affiliate-button">View on Amazon</a>
 
                 <h3>🏃 Best for Portability: JBL CHARGE 5 Portable Speaker</h3>
                 <p><strong>Why I love them:</strong> While not headphones, this speaker deserves mention for outdoor activities. IP67 waterproof, 20-hour battery, and incredible JBL Pro Sound make it perfect for gatherings.</p>
                 <p><strong>Best for:</strong> Outdoor enthusiasts and party hosts.</p>
                 <p><strong>Price:</strong> $179.95</p>
                 <p><strong>Downside:</strong> Not personal audio, but amazing for groups.</p>
-                <a href="https://amzn.to/4gDGLII" class="affiliate-button" style="display: inline-block; margin: 1rem 0; padding: 0.5rem 1rem; background: #007bff; color: white; text-decoration: none; border-radius: 4px;">View on Amazon</a>
+                <a href="https://amzn.to/4gDGLII" class="affiliate-button">View on Amazon</a>
             </div>
 
             <h2>Tips for Choosing the Right Pair</h2>
@@ -172,23 +620,17 @@
         </article>
 
         <!-- Comments Section -->
-        <section class="comments-section fade-in" style="max-width: 800px; margin: 2rem auto; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
-            <h3 style="margin-bottom: 2rem;">Comments (25)</h3>
+        <section class="comments-section fade-in">
+            <h3 style="margin-bottom: 1.5rem;">Comments (25)</h3>
             
             <!-- Comment Form -->
-            <div class="comment-form" style="margin-bottom: 3rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                <h4 style="margin-bottom: 1rem; color: #333;">Leave a Comment</h4>
+            <div class="comment-form">
+                <h4>Leave a Comment</h4>
                 <form>
-                    <div style="margin-bottom: 1rem;">
-                        <input type="text" placeholder="Your Name" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <input type="email" placeholder="Your Email (optional)" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <textarea placeholder="Your comment..." required rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical;"></textarea>
-                    </div>
-                    <button type="submit" style="background: #007bff; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;">Post Comment</button>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email (optional)">
+                    <textarea placeholder="Your comment..." required rows="4"></textarea>
+                    <button type="submit">Post Comment</button>
                 </form>
             </div>
 
@@ -196,241 +638,123 @@
             <div class="comments-list">
                 
                 <!-- Comment 1 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <div class="comment">
+                    <div class="comment-header">
                         <div>
-                            <strong style="color: #333;">Sarah M.</strong>
+                            <strong>Sarah M.</strong>
                             <span style="color: #666; margin-left: 0.5rem;">September 16, 2025</span>
                         </div>
-                        <button class="like-btn" data-likes="23" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 23</button>
+                        <button class="like-btn" data-likes="23">❤️ 23</button>
                     </div>
-                    <p style="color: #333; line-height: 1.6;">This is exactly the guide I needed! Just ordered the Sony WH-1000XM5 based on your recommendation. The comparison between different price points was super helpful.</p>
+                    <p>This is exactly the guide I needed! Just ordered the Sony WH-1000XM5 based on your recommendation. The comparison between different price points was super helpful.</p>
                     
                     <!-- Reply -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #007bff; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <div class="reply">
+                        <div class="comment-header">
                             <div>
-                                <strong style="color: #007bff;">Tech Expert</strong>
+                                <strong style="color: #007bff;">Home Tech Expert</strong>
                                 <span style="color: #666; margin-left: 0.5rem;">September 16, 2025</span>
                             </div>
-                            <button class="like-btn" data-likes="8" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 8</button>
+                            <button class="like-btn" data-likes="8">❤️ 8</button>
                         </div>
-                        <p style="color: #333; line-height: 1.6;">Thanks Sarah! You're going to love the Sony's. The noise cancellation is incredible - perfect for studying or commuting. Let me know how you like them!</p>
+                        <p>Thanks Sarah! You're going to love the Sony's. The noise cancellation is incredible - perfect for studying or commuting. Let me know how you like them!</p>
                     </div>
                 </div>
 
                 <!-- Comment 2 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <div class="comment">
+                    <div class="comment-header">
                         <div>
-                            <strong style="color: #333;">Mike Rodriguez</strong>
+                            <strong>Mike Rodriguez</strong>
                             <span style="color: #666; margin-left: 0.5rem;">September 15, 2025</span>
                         </div>
-                        <button class="like-btn" data-likes="45" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 45</button>
+                        <button class="like-btn" data-likes="45">❤️ 45</button>
                     </div>
-                    <p style="color: #333; line-height: 1.6;">As someone who's been through 6 pairs of headphones in 2 years, I wish I had this guide earlier! The battery life section was spot on - nothing worse than dead headphones mid-workout.</p>
+                    <p>As someone who's been through 6 pairs of headphones in 2 years, I wish I had this guide earlier! The battery life section was spot on - nothing worse than dead headphones mid-workout.</p>
                     
-                    <!-- Replies -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #28a745; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <!-- Reply -->
+                    <div class="reply">
+                        <div class="comment-header">
                             <div>
-                                <strong style="color: #333;">Jessica T.</strong>
+                                <strong style="color: #007bff;">Home Tech Expert</strong>
                                 <span style="color: #666; margin-left: 0.5rem;">September 15, 2025</span>
                             </div>
-                            <button class="like-btn" data-likes="12" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 12</button>
+                            <button class="like-btn" data-likes="18">❤️ 18</button>
                         </div>
-                        <p style="color: #333; line-height: 1.6;">Same here! I've learned the hard way that cheap headphones are expensive in the long run.</p>
-                    </div>
-                    
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #007bff; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-                                <strong style="color: #007bff;">Tech Expert</strong>
-                                <span style="color: #666; margin-left: 0.5rem;">September 15, 2025</span>
-                            </div>
-                            <button class="like-btn" data-likes="18" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 18</button>
-                        </div>
-                        <p style="color: #333; line-height: 1.6;">Exactly! Quality over quantity every time. Better to invest in one great pair than cycle through cheap ones.</p>
+                        <p>Exactly! Quality over quantity every time. Better to invest in one great pair than cycle through cheap ones.</p>
                     </div>
                 </div>
 
                 <!-- Comment 3 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <div class="comment">
+                    <div class="comment-header">
                         <div>
-                            <strong style="color: #333;">Emily Chen</strong>
+                            <strong>Emily Chen</strong>
                             <span style="color: #666; margin-left: 0.5rem;">September 15, 2025</span>
                         </div>
-                        <button class="like-btn" data-likes="31" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 31</button>
+                        <button class="like-btn" data-likes="31">❤️ 31</button>
                     </div>
-                    <p style="color: #333; line-height: 1.6;">The AirPods Pro 2 have been game-changers for me. The spatial audio is incredible for movies, and they stay put during my morning runs. Worth every penny!</p>
+                    <p>The AirPods Pro 2 have been game-changers for me. The spatial audio is incredible for movies, and they stay put during my morning runs. Worth every penny!</p>
                 </div>
 
                 <!-- Comment 4 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <div class="comment">
+                    <div class="comment-header">
                         <div>
-                            <strong style="color: #333;">Alex Johnson</strong>
+                            <strong>Alex Johnson</strong>
                             <span style="color: #666; margin-left: 0.5rem;">September 14, 2025</span>
                         </div>
-                        <button class="like-btn" data-likes="67" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 67</button>
+                        <button class="like-btn" data-likes="67">❤️ 67</button>
                     </div>
-                    <p style="color: #333; line-height: 1.6;">Gaming headset section was perfect! Just got the SteelSeries Arctis Nova 7P and the mic quality is insane. My teammates can finally understand me clearly during raids!</p>
-                    
-                    <!-- Reply -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #28a745; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-                                <strong style="color: #333;">StudentLife2025</strong>
-                                <span style="color: #666; margin-left: 0.5rem;">September 13, 2025</span>
-                            </div>
-                            <button class="like-btn" data-likes="29" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 29</button>
-                        </div>
-                        <p style="color: #333; line-height: 1.6;">Totally agree! The AirPods Pro 2 have been perfect for my budget and needs. Sound quality rivals headphones twice the price.</p>
-                    </div>
+                    <p>Gaming headset section was perfect! Just got the SteelSeries Arctis Nova 7P and the mic quality is insane. My teammates can finally understand me clearly during raids!</p>
                 </div>
 
-                <!-- Comment 8 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <!-- Comment 5 -->
+                <div class="comment">
+                    <div class="comment-header">
                         <div>
-                            <strong style="color: #333;">Lisa Park</strong>
+                            <strong>Lisa Park</strong>
                             <span style="color: #666; margin-left: 0.5rem;">September 12, 2025</span>
                         </div>
-                        <button class="like-btn" data-likes="52" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 52</button>
+                        <button class="like-btn" data-likes="52">❤️ 52</button>
                     </div>
-                    <p style="color: #333; line-height: 1.6;">The battery life comparison was so helpful! I travel a lot for work and need headphones that can last through long flights. Sony it is!</p>
+                    <p>The battery life comparison was so helpful! I travel a lot for work and need headphones that can last through long flights. Sony it is!</p>
                 </div>
 
-                <!-- Comment 9 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <!-- Comment 6 -->
+                <div class="comment">
+                    <div class="comment-header">
                         <div>
-                            <strong style="color: #333;">Marcus Thompson</strong>
+                            <strong>Marcus Thompson</strong>
                             <span style="color: #666; margin-left: 0.5rem;">September 12, 2025</span>
                         </div>
-                        <button class="like-btn" data-likes="16" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 16</button>
+                        <button class="like-btn" data-likes="16">❤️ 16</button>
                     </div>
-                    <p style="color: #333; line-height: 1.6;">What about durability? I work in construction and need something that can handle dust and occasional drops.</p>
+                    <p>What about durability? I work in construction and need something that can handle dust and occasional drops.</p>
                     
                     <!-- Reply -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #007bff; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <div class="reply">
+                        <div class="comment-header">
                             <div>
-                                <strong style="color: #007bff;">Tech Expert</strong>
+                                <strong style="color: #007bff;">Home Tech Expert</strong>
                                 <span style="color: #666; margin-left: 0.5rem;">September 12, 2025</span>
                             </div>
-                            <button class="like-btn" data-likes="22" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 22</button>
+                            <button class="like-btn" data-likes="22">❤️ 22</button>
                         </div>
-                        <p style="color: #333; line-height: 1.6;">For construction work, I'd actually recommend looking at more rugged options like the JBL speakers for site audio, or consider earbuds with higher IP ratings. The gaming headsets also tend to be more durable.</p>
+                        <p>For construction work, I'd actually recommend looking at more rugged options like the JBL speakers for site audio, or consider earbuds with higher IP ratings. The gaming headsets also tend to be more durable.</p>
                     </div>
-                </div>
-
-                <!-- Comment 10 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Amanda Foster</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 11, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="73" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 73</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">Finally, someone who actually tested all these headphones instead of just reading specs! The real-world usage scenarios were spot on.</p>
-                </div>
-
-                <!-- Comment 11 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Jake Williams</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 11, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="35" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 35</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">The multipoint connectivity feature you mentioned is a game-changer! Being able to switch between my laptop and phone seamlessly during the day is incredible.</p>
-                </div>
-
-                <!-- Comment 12 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Priya Sharma</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 10, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="41" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 41</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">As someone with smaller ears, comfort is huge for me. Do any of these work well for people who find most headphones too bulky?</p>
-                    
-                    <!-- Replies -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #28a745; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-                                <strong style="color: #333;">SmallEarClub</strong>
-                                <span style="color: #666; margin-left: 0.5rem;">September 10, 2025</span>
-                            </div>
-                            <button class="like-btn" data-likes="18" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 18</button>
-                        </div>
-                        <p style="color: #333; line-height: 1.6;">The AirPods Pro 2 are perfect for smaller ears! They come with multiple ear tip sizes and stay comfortable for hours.</p>
-                    </div>
-                    
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #007bff; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-                                <strong style="color: #007bff;">Tech Expert</strong>
-                                <span style="color: #666; margin-left: 0.5rem;">September 10, 2025</span>
-                            </div>
-                            <button class="like-btn" data-likes="14" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 14</button>
-                        </div>
-                        <p style="color: #333; line-height: 1.6;">Great question Priya! I'd definitely recommend trying the AirPods Pro 2 first. If you prefer over-ear, the Sony's are surprisingly lightweight despite their size.</p>
-                    </div>
-                </div>
-
-                <!-- Comment 13 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Ryan O'Connor</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 10, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="28" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 28</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">The section on what NOT to buy would be helpful too. So many overhyped products out there that look good but perform poorly.</p>
-                </div>
-
-                <!-- Comment 14 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Nina Rodriguez</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 9, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="59" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 59</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">Thank you for mentioning the fast charging feature! As a busy mom, I often forget to charge my headphones overnight. 10 minutes for several hours of use is perfect.</p>
-                </div>
-
-                <!-- Comment 15 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Kevin Chang</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 9, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="44" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 44</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">The gaming headset recommendation was perfect! The SteelSeries has completely changed my streaming setup. Crystal clear audio for both gaming and content creation.</p>
                 </div>
 
             </div>
             
             <!-- Load More Comments Button -->
-            <div style="text-align: center; margin-top: 2rem;">
-                <button style="background: #6c757d; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;">Load More Comments</button>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <button id="load-more-comments" style="background: #6c757d; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;">Load More Comments</button>
             </div>
         </section>
 
         <!-- Back to Blog Link -->
-        <div style="text-align: center; margin: 2rem 0;">
+        <div style="text-align: center; margin: 1.5rem 0;">
             <a href="blog.html" style="display: inline-block; padding: 0.75rem 2rem; background: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 1rem;">← Back to Blog</a>
         </div>
     </main>
@@ -445,12 +769,42 @@
         </div>
     </footer>
     
-    <script src="site-features/script.js"></script>
-
-    <!-- Comments Interaction Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Handle like buttons
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    navLinks.classList.toggle('open');
+                });
+            }
+
+            // Post like button functionality
+            const postLikeBtn = document.getElementById('post-like-btn');
+            if (postLikeBtn) {
+                postLikeBtn.addEventListener('click', function() {
+                    const likeCount = this.querySelector('.like-count');
+                    let currentLikes = parseInt(this.getAttribute('data-likes'));
+                    let isLiked = this.classList.contains('liked');
+                    
+                    if (isLiked) {
+                        currentLikes--;
+                        this.classList.remove('liked');
+                    } else {
+                        currentLikes++;
+                        this.classList.add('liked');
+                    }
+                    
+                    this.setAttribute('data-likes', currentLikes);
+                    likeCount.textContent = currentLikes.toLocaleString();
+                });
+            }
+
+            // Handle comment like buttons
             const likeButtons = document.querySelectorAll('.like-btn');
             likeButtons.forEach(button => {
                 button.addEventListener('click', function() {
@@ -460,13 +814,9 @@
                     if (isLiked) {
                         currentLikes--;
                         this.classList.remove('liked');
-                        this.style.color = '#666';
-                        this.style.borderColor = '#ddd';
                     } else {
                         currentLikes++;
                         this.classList.add('liked');
-                        this.style.color = '#e74c3c';
-                        this.style.borderColor = '#e74c3c';
                     }
                     
                     this.setAttribute('data-likes', currentLikes);
@@ -479,82 +829,73 @@
             if (commentForm) {
                 commentForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    alert('Thank you for your comment! It will be reviewed and published soon.');
+                    const nameInput = this.querySelector('input[type="text"]');
+                    const commentInput = this.querySelector('textarea');
+                    const author = (nameInput && nameInput.value.trim()) || 'Anonymous';
+                    const text = (commentInput && commentInput.value.trim()) || '';
+                    
+                    if (!text) return;
+                    
+                    const date = new Date();
+                    const formatted = date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+                    
+                    const newComment = document.createElement('div');
+                    newComment.className = 'comment';
+                    newComment.innerHTML = `
+                        <div class="comment-header">
+                            <div>
+                                <strong>${author}</strong>
+                                <span style="color: #666; margin-left: 0.5rem;">${formatted}</span>
+                            </div>
+                            <button class="like-btn" data-likes="0">❤️ 0</button>
+                        </div>
+                        <p>${text}</p>
+                    `;
+                    
+                    const commentsList = document.querySelector('.comments-list');
+                    if (commentsList) {
+                        commentsList.appendChild(newComment);
+                        
+                        // Bind like functionality to new comment
+                        const newLikeBtn = newComment.querySelector('.like-btn');
+                        newLikeBtn.addEventListener('click', function() {
+                            let currentLikes = parseInt(this.getAttribute('data-likes'));
+                            let isLiked = this.classList.contains('liked');
+                            
+                            if (isLiked) {
+                                currentLikes--;
+                                this.classList.remove('liked');
+                            } else {
+                                currentLikes++;
+                                this.classList.add('liked');
+                            }
+                            
+                            this.setAttribute('data-likes', currentLikes);
+                            this.innerHTML = `❤️ ${currentLikes}`;
+                        });
+                    }
+                    
                     this.reset();
                 });
             }
             
             // Handle load more comments
-            const loadMoreBtn = document.querySelector('button:contains("Load More Comments")');
+            const loadMoreBtn = document.getElementById('load-more-comments');
             if (loadMoreBtn) {
                 loadMoreBtn.addEventListener('click', function() {
-                    alert('Loading more comments... Feature coming soon!');
+                    // Simulate loading more comments
+                    this.textContent = 'Loading...';
+                    this.disabled = true;
+                    
+                    setTimeout(() => {
+                        this.textContent = 'No more comments';
+                        this.style.opacity = '0.6';
+                        this.style.cursor = 'not-allowed';
+                    }, 1000);
                 });
             }
         });
     </script>
-
+    
 </body>
-</html>" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-                                <strong style="color: #333;">GamerPro2025</strong>
-                                <span style="color: #666; margin-left: 0.5rem;">September 14, 2025</span>
-                            </div>
-                            <button class="like-btn" data-likes="24" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 24</button>
-                        </div>
-                        <p style="color: #333; line-height: 1.6;">SteelSeries is the way to go! The battery life is unreal - I can game all day without charging.</p>
-                    </div>
-                </div>
-
-                <!-- Comment 5 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">David Kim</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 14, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="19" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 19</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">Question - do any of these work well for phone calls? I need something for work calls that doesn't make me sound like I'm in a tunnel.</p>
-                    
-                    <!-- Reply -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #007bff; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-                                <strong style="color: #007bff;">Tech Expert</strong>
-                                <span style="color: #666; margin-left: 0.5rem;">September 14, 2025</span>
-                            </div>
-                            <button class="like-btn" data-likes="15" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 15</button>
-                        </div>
-                        <p style="color: #333; line-height: 1.6;">Great question David! Both the Sony WH-1000XM5 and AirPods Pro 2 have excellent call quality. The Sony's have multiple mics that filter out background noise perfectly.</p>
-                    </div>
-                </div>
-
-                <!-- Comment 6 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Rachel Green</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 13, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="42" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 42</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">This guide saved me from making a huge mistake! I was about to buy some cheap knockoffs on Amazon. Thank you for the honest reviews!</p>
-                </div>
-
-                <!-- Comment 7 -->
-                <div class="comment" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    <div class="comment-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <div>
-                            <strong style="color: #333;">Tom Wilson</strong>
-                            <span style="color: #666; margin-left: 0.5rem;">September 13, 2025</span>
-                        </div>
-                        <button class="like-btn" data-likes="38" style="background: none; border: 1px solid #ddd; padding: 0.25rem 0.75rem; border-radius: 20px; cursor: pointer; color: #666;">❤️ 38</button>
-                    </div>
-                    <p style="color: #333; line-height: 1.6;">College student here - the budget recommendations are perfect! Sometimes you don't need to spend $400 to get great sound quality.</p>
-                    
-                    <!-- Reply -->
-                    <div class="reply" style="margin-left: 2rem; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #28a745; border-radius: 0 8px 8px 0;">
-                        <div class="comment-header
-
-
+</html>>
